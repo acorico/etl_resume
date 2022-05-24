@@ -21,7 +21,7 @@ def main():
     #Transform: Group and filter customer data to be later saved.
     df_customers = t.transform(df_customers,spark)
     #Load: Results are stored in a csv file. /data/output  
-    l.load(df_customers,spark)
+    l.load(df_customers)
     # To see the jobs by spark ui : time.sleep(10)
     
 if __name__ == "__main__":
