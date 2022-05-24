@@ -26,7 +26,7 @@ Build the spark cluster image: (go to the root of the project)
 
 Run by command line (takes 15-20 minutes):
 
-   docker build -t cluster-apache-spark:3.0.2 .
+   docker build -t cluster-apache-spark:3.0.2 . > build.log
    
 Docker Compose :
  Run by command line:
