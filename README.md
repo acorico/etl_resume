@@ -49,6 +49,6 @@ Access the master container of the Spark cluster:
 
 docker exec -w /opt/spark/bin -it master_container bash
 
-Execute the ETL process by command line with the following instruction (previously located in spark/bin):
+Execute the ETL process by command line with the following instruction (previously located in /opt/spark/bin):
 
 spark-submit --master spark://spark-master:7077 --packages org.mongodb.spark:mongo-spark-connector_2.12:3.0.1,org.postgresql:postgresql:42.0.0  /opt/spark-apps/etl.py 
