@@ -47,11 +47,7 @@ http://localhost:9092/
 
 Access the master container of the Spark cluster:
 
-docker exec -it master_container bash
-
-Locate in the bin folder
-
-cd bin
+docker exec -w /opt/spark/bin -it master_container bash
 
 Execute the ETL process by command line with the following instruction (previously located in spark/bin):
 
